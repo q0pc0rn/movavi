@@ -1,0 +1,24 @@
+{
+  "name": "movavi",
+  "version": "1.0.0",
+  "description": "test task",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "normalize.css": "^7.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/q0pc0rn/movavi.git"
+  },
+  "author": "Aslan Zhubanishchev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/q0pc0rn/movavi/issues"
+  },
+  "homepage": "https://github.com/q0pc0rn/movavi#readme"
+}
