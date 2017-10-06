@@ -56,63 +56,64 @@
   padding-left: 70px 17px; }
   .section3.container ol {
     list-style-position: inside;
-    padding-left: 0px; }
+    padding-left: 0px;
+    padding-bottom: 23px; }
     .section3.container ol li {
       font-size: 24px;
       font-weight: bold; }
-      .section3.container ol li img, .section3.container ol li p {
+      .section3.container ol li p {
+        padding: 23px 0px 40px 0px;
         margin-left: 0px;
+        font-size: 16px;
+        font-weight: 400; }
+      .section3.container ol li img {
+        padding-top: 32px;
+        width: 100%; }
+
+.section3_2.container {
+  padding: 0px; }
+  .section3_2.container ul li.col-xs-6 {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    padding: 0px;
+    background-color: #f6f6f6; }
+    .section3_2.container ul li.col-xs-6 a {
+      font-size: 16px;
+      height: 65px;
+      color: #7b7b7b; }
+  .section3_2.container .tab-content {
+    padding: 0px 17px 0px 17px;
+    width: 100%;
+    background-color: #eee; }
+  .section3_2.container .nav-tabs {
+    border: none; }
+  .section3_2.container ol {
+    padding: 0px;
+    list-style-position: inside; }
+    .section3_2.container ol li {
+      font-size: 24px;
+      font-weight: bold; }
+      .section3_2.container ol li img, .section3_2.container ol li p {
         width: 100%;
         font-size: 16px;
         font-weight: 400; }
-
-.section3_2 {
-  width: 320px; }
-  .section3_2 ol li {
-    font-size: 24px;
-    font-weight: bold; }
-    .section3_2 ol li img, .section3_2 ol li p {
-      margin-left: -20px;
-      width: 100%;
-      font-size: 16px;
-      font-weight: 400; }
-  .section3_2 .nav.nav-tabs > li.active > a {
-    color: #black;
+  .section3_2.container .nav.nav-tabs > li.active > a {
+    color: black;
+    font-weight: bold;
     background-color: #eee;
     border: 1px solid #eee; }
-    .section3_2 .nav.nav-tabs > li.active > a:focus, .section3_2 .nav.nav-tabs > li.active > a:hover {
+    .section3_2.container .nav.nav-tabs > li.active > a:focus, .section3_2.container .nav.nav-tabs > li.active > a:hover {
       background-color: #eee;
       border: 1px solid #eee; }
-  .section3_2 ol {
-    width: 100%;
-    background-color: #eee; }
-  .section3_2 .nav {
-    background-color: none; }
-    .section3_2 .nav li {
-      counter-reset: 3;
-      text-align: center; }
-      .section3_2 .nav li a {
-        font-size: 16px;
-        color: #7b7b7b; }
-  .section3_2 ol {
-    counter-reset: item; }
-    .section3_2 ol li {
-      counter-increment: item; }
-      .section3_2 ol li img {
-        width: 100%; }
-    .section3_2 ol ol li {
-      display: block; }
-    .section3_2 ol ol li:before {
-      content: counters(item, ".") ". ";
-      counter-increment: item; }
-  .section3_2 .swap_mode {
+  .section3_2.container .swap_mode {
     display: inline-block;
     vertical-align: middle; }
-    .section3_2 .swap_mode a {
+    .section3_2.container .swap_mode a {
       padding-bottom: 20px; }
-      .section3_2 .swap_mode a img {
+      .section3_2.container .swap_mode a img {
         width: 30px; }
-      .section3_2 .swap_mode a p {
+      .section3_2.container .swap_mode a p {
         text-align: center; }
 
 .section3_3 {

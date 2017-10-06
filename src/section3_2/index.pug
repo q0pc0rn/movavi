@@ -1,22 +1,23 @@
-.section3_2
+.section3_2.container
   ul.nav.nav-tabs
-    li.active: a(href="#Easy_Mode", data-toggle="tab") Easy Mode
-    li: a(href="#Full_Feature_Mode", data-toggle="tab") Full Feature Mode
+    li.col-xs-6.active: a(href="#Easy_Mode", data-toggle="tab") Easy Mode
+    li.col-xs-6: a(href="#Full_Feature_Mode", data-toggle="tab") Full Feature Mode
   .tab-content  
     .tab-pane.active#Easy_Mode
-      ol
-        li Upload Photos
-          img(src="img/screen_1.png")
-          p Welcome to the Slideshow Wizard! In the first tab, upload your images by clicking +Files or +Foldersand choosing the pictures to include. When the uploaded photos appear in the working area, you can drag them into any order, as well as rotate or remove them by clicking the relevant icons on each of the images. You can also set Slide duration in the appropriate field. 
-        li Add Transitions
-          img(src="img/screen_2.png")
-          p Open the second tab. Here, you can choose the transition style to join your photos, or click No transitions if you don’t want fades in your slideshow. To adjust the speed of transition from one slide to the next, set the Max transition duration in the field below the list of transition styles. 
-        li Add Music
-          img(src="img/screen_3.png")
-          p Go to the third tab. Click +Audio and upload your own music or open the Add one of our tracks list and choose from the built-in audio tracks. To sync slide duration with the rhythm of the music, click the Yes button and then set Minimum slide duration. Finally, click Finish. 
-        .swap_mode: a(href="#Full_Feature_Mode", data-toggle="tab")
-          img(src="img/arrow.png")
-          span See Full Feature Mode
+      ol(start="3"): li
+        ol
+          li Upload Photos
+            img(src="img/screen_1.png")
+            p Welcome to the Slideshow Wizard! In the first tab, upload your images by clicking +Files or +Foldersand choosing the pictures to include. When the uploaded photos appear in the working area, you can drag them into any order, as well as rotate or remove them by clicking the relevant icons on each of the images. You can also set Slide duration in the appropriate field. 
+          li Add Transitions
+            img(src="img/screen_2.png")
+            p Open the second tab. Here, you can choose the transition style to join your photos, or click No transitions if you don’t want fades in your slideshow. To adjust the speed of transition from one slide to the next, set the Max transition duration in the field below the list of transition styles. 
+          li Add Music
+            img(src="img/screen_3.png")
+            p Go to the third tab. Click +Audio and upload your own music or open the Add one of our tracks list and choose from the built-in audio tracks. To sync slide duration with the rhythm of the music, click the Yes button and then set Minimum slide duration. Finally, click Finish. 
+          .swap_mode: a(href="#Full_Feature_Mode", data-toggle="tab")
+            img(src="img/arrow.png")
+            span See Full Feature Mode
     .tab-pane#Full_Feature_Mode   
       ol
         li Add Your Files to the Program
