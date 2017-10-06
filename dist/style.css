@@ -73,12 +73,19 @@
 .section3_2.container {
   padding: 0px; }
   .section3_2.container ul li.col-xs-6 {
+    border-radius: 6px 0 0 0;
+    width: 48%;
     display: block;
     text-align: center;
     font-size: 16px;
     padding: 0px;
     background-color: #f6f6f6; }
+    .section3_2.container ul li.col-xs-6:first-child {
+      border-radius: 0 6px 0 0;
+      margin-right: 4%; }
     .section3_2.container ul li.col-xs-6 a {
+      vertical-align: middle;
+      border: none;
       font-size: 16px;
       height: 65px;
       color: #7b7b7b; }
@@ -101,11 +108,9 @@
   .section3_2.container .nav.nav-tabs > li.active > a {
     color: black;
     font-weight: bold;
-    background-color: #eee;
-    border: 1px solid #eee; }
+    background-color: #eee; }
     .section3_2.container .nav.nav-tabs > li.active > a:focus, .section3_2.container .nav.nav-tabs > li.active > a:hover {
-      background-color: #eee;
-      border: 1px solid #eee; }
+      background-color: #eee; }
   .section3_2.container .swap_mode {
     display: inline-block;
     vertical-align: middle; }

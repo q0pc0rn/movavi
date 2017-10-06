@@ -1,12 +1,19 @@
 .section3_2.container
   ul
     li.col-xs-6
+      border-radius: 6px 0 0 0
+      width: 48%
       display: block
       text-align: center
       font-size: 16px
       padding: 0px
       background-color: #f6f6f6
+      &:first-child
+        border-radius: 0 6px 0 0
+        margin-right: 4%
       a
+        vertical-align: middle
+        border: none
         font-size: 16px
         height: 65px
         color: #7b7b7b
@@ -31,10 +38,8 @@
     color: black
     font-weight: bold
     background-color: #eee
-    border: 1px solid #eee
     &:focus, &:hover
       background-color: #eee
-      border: 1px solid #eee
 
   .swap_mode
     display: inline-block
