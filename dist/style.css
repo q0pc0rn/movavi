@@ -28,16 +28,18 @@
   margin-bottom: 15px;
   background: #1962b2; }
 
-.section1 {
+.section1.container {
+  margin: 0px;
   width: 100%;
   background: url("img/banner_header.png") no-repeat center center;
   font-size: 25px;
   padding: 70px 17px; }
-  .section1 div:nth-child(2) p {
+  .section1.container div:nth-child(2) p {
     font-weight: bold; }
-  .section1 div ul {
-    font-size: 15px; }
-  .section1 div:nth-child(4) {
+  .section1.container div ul {
+    font-size: 15px;
+    padding-left: 17px; }
+  .section1.container div:nth-child(4) {
     font-size: 20px; }
 
 .section2 {
@@ -49,16 +51,20 @@
   .section2 div:nth-child(2) p {
     font-size: 16px; }
 
-.section3 {
-  width: 100%; }
-  .section3 ol li {
-    font-size: 24px;
-    font-weight: bold; }
-    .section3 ol li img, .section3 ol li p {
-      margin-left: -20px;
-      width: 100%;
-      font-size: 16px;
-      font-weight: 400; }
+.section3.container {
+  width: 100%;
+  padding-left: 70px 17px; }
+  .section3.container ol {
+    list-style-position: inside;
+    padding-left: 0px; }
+    .section3.container ol li {
+      font-size: 24px;
+      font-weight: bold; }
+      .section3.container ol li img, .section3.container ol li p {
+        margin-left: 0px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400; }
 
 .section3_2 {
   width: 320px; }
