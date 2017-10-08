@@ -1,11 +1,25 @@
-.section3_3
+.section3_3.container
   width: 100%
   ol
+    list-style-position: inside
+    padding-left: 0px
+    padding-bottom: 23px
     li
       font-size: 24px
       font-weight: bold
-      img, p
-        margin-left: -20px
-        width: 100%
+
+      p
+        padding: 23px 0px 40px 0px
+        margin-left: 0px
         font-size: 16px
         font-weight: 400
+      img
+        padding-top: 32px
+        width: 100%
+ol
+  list-style: none
+  li
+    list-style-type: none
+  li:before
+    content: counters(list, ".") ". "
+    counter-increment: list 4

@@ -4,7 +4,7 @@
   line-height: 1.2;
   height: 72px;
   width: 286px;
-  border-radius: 9px;
+  border-radius: 6px;
   display: inline-block;
   text-align: center;
   vertical-align: middle; }
@@ -33,7 +33,7 @@
   width: 100%;
   background: url("img/banner_header.png") no-repeat center center;
   font-size: 25px;
-  padding: 70px 17px; }
+  padding: 65px 17px; }
   .section1.container div:nth-child(2) p {
     font-weight: bold; }
   .section1.container div ul {
@@ -52,11 +52,11 @@
     font-size: 16px; }
 
 .section3.container {
-  width: 100%;
-  padding-left: 70px 17px; }
+  padding: 0px;
+  width: 100%; }
   .section3.container ol {
+    padding: 0px 17px 0px 17px;
     list-style-position: inside;
-    padding-left: 0px;
     padding-bottom: 23px; }
     .section3.container ol li {
       font-size: 24px;
@@ -69,6 +69,21 @@
       .section3.container ol li img {
         padding-top: 32px;
         width: 100%; }
+  .section3.container ol li img, .section3.container p {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400; }
+  .section3.container ol:first-child {
+    list-style: none;
+    counter-reset: item; }
+    .section3.container ol:first-child li {
+      display: block;
+      list-style-type: none; }
+    .section3.container ol:first-child li:before {
+      content: counters(item, ".") ". ";
+      counter-increment: item; }
+  .section3.container ol:last-child li {
+    list-style: disc; }
 
 .section3_2.container {
   padding: 0px; }
@@ -84,6 +99,7 @@
       border-radius: 0 6px 0 0;
       margin-right: 4%; }
     .section3_2.container ul li.col-xs-6 a {
+      padding: 10px 20px;
       vertical-align: middle;
       border: none;
       font-size: 16px;
@@ -112,38 +128,62 @@
     .section3_2.container .nav.nav-tabs > li.active > a:focus, .section3_2.container .nav.nav-tabs > li.active > a:hover {
       background-color: #eee; }
   .section3_2.container .swap_mode {
-    display: inline-block;
-    vertical-align: middle; }
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     .section3_2.container .swap_mode a {
       padding-bottom: 20px; }
       .section3_2.container .swap_mode a img {
         width: 30px; }
-      .section3_2.container .swap_mode a p {
-        text-align: center; }
+      .section3_2.container .swap_mode a span {
+        padding-left: 13px; }
+  .section3_2.container .tab ol:nth-child(2) {
+    counter-reset: item; }
+  .section3_2.container ol li:before {
+    counter-increment: item;
+    content: counters(item, ".") ". "; }
 
-.section3_3 {
+.section3_3.container {
   width: 100%; }
-  .section3_3 ol li {
-    font-size: 24px;
-    font-weight: bold; }
-    .section3_3 ol li img, .section3_3 ol li p {
-      margin-left: -20px;
-      width: 100%;
-      font-size: 16px;
-      font-weight: 400; }
+  .section3_3.container ol {
+    list-style-position: inside;
+    padding-left: 0px;
+    padding-bottom: 23px; }
+    .section3_3.container ol li {
+      font-size: 24px;
+      font-weight: bold; }
+      .section3_3.container ol li p {
+        padding: 23px 0px 40px 0px;
+        margin-left: 0px;
+        font-size: 16px;
+        font-weight: 400; }
+      .section3_3.container ol li img {
+        padding-top: 32px;
+        width: 100%; }
+
+ol {
+  list-style: none; }
+  ol li {
+    list-style-type: none; }
+  ol li:before {
+    content: counters(list, ".") ". ";
+    counter-increment: list 4; }
 
 .section4 {
   height: 1079px;
-  padding: 70px 14px;
+  padding: 70px 17px;
   background: url("img/bg-color_4.png");
   width: 100%; }
+  .section4 .col-xs-12 {
+    padding: 0px; }
   .section4 .button, .section4 .button-window, .section4 .button-iphone {
     color: white;
     font-size: 20px;
     line-height: 1.2;
     height: 72px;
     width: 286px;
-    border-radius: 9px;
+    border-radius: 6px;
     display: inline-block;
     text-align: center;
     vertical-align: middle; }
@@ -169,17 +209,23 @@
     text-align: center;
     font-weight: bold; }
   .section4 ul, .section4 p {
+    padding-left: 0px;
     text-align: left;
     font-weight: 400;
     font-size: 16px; }
-    .section4 ul li:nth-child(1), .section4 p li:nth-child(1) {
-      list-style-image: url("img/icon_1_pictures.png"); }
-    .section4 ul li:nth-child(2), .section4 p li:nth-child(2) {
-      list-style-image: url("img/icon_2_film.png"); }
-    .section4 ul li:nth-child(3), .section4 p li:nth-child(3) {
-      list-style-image: url("img/icon_text.png"); }
-    .section4 ul li:nth-child(4), .section4 p li:nth-child(4) {
-      list-style-image: url("img/icon_4_diamond-outlined-shape.png"); }
+  .section4 .row {
+    padding: 12px 0px; }
+    .section4 .row .col-xs-9 {
+      font-size: 16px;
+      vertical-align: middle; }
+    .section4 .row .kek {
+      position: relative;
+      padding-top: 5px; }
+    .section4 .row * {
+      vertical-align: middle; }
+    .section4 .row .lol img {
+      position: relative;
+      padding-left: 5px; }
   .section4 .col-xs-12:nth-child(2) {
     display: flex;
     justify-content: center; }
@@ -190,10 +236,64 @@
   .section4 a {
     color: #3581d5;
     font-size: 14px;
-    font-style: italic;
     text-align: center; }
+
+.section5.container {
+  background-color: #eee;
+  width: 100%;
+  padding: 70px 17px 0px 17px; }
+  .section5.container p {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold; }
+  .section5.container .col-xs-12 {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    height: 72px;
+    border: 2px dashed #bdbdbd;
+    border-radius: 6px; }
+    .section5.container .col-xs-12:nth-child(4) {
+      padding-left: 17px;
+      border: none;
+      border-radius: 6px;
+      background-color: #b4d1f2; }
+    .section5.container .col-xs-12 p {
+      font-size: 16px;
+      text-align: left; }
+
+.section6.container {
+  width: 100%;
+  padding: 70px 17px; }
+  .section6.container p {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold; }
+  .section6.container .col-xs-12 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0px;
+    border-radius: 6px;
+    background-color: #e3f0ff;
+    height: 132px;
+    margin-bottom: 32px; }
+    .section6.container .col-xs-12 .col-xs-7 {
+      padding-right: 17px; }
+    .section6.container .col-xs-12 img {
+      width: 100px;
+      height: 100px; }
+    .section6.container .col-xs-12 p {
+      text-align: left;
+      font-size: 18px;
+      color: #4188d8; }
+  .section6.container .col-xs-12:last-child p {
+    color: #003269; }
 
 body {
   font-family: OpenSans; }
+
+ol li::before {
+  color: #d96348; }
 
 /*# sourceMappingURL=style.css.map */

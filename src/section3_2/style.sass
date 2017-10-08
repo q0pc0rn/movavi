@@ -12,6 +12,7 @@
         border-radius: 0 6px 0 0
         margin-right: 4%
       a
+        padding: 10px 20px
         vertical-align: middle
         border: none
         font-size: 16px
@@ -42,11 +43,22 @@
       background-color: #eee
 
   .swap_mode
-    display: inline-block
-    vertical-align: middle
+    font-size: 16px
+    display: flex
+    justify-content: center
+    align-items: center
     a
       padding-bottom: 20px
       img
         width: 30px
-      p
-        text-align: center
+      span
+        padding-left: 13px
+
+  .tab
+    ol:nth-child(2)
+      counter-reset: item
+  ol
+    li:before
+      // color: #d96348
+      counter-increment: item
+      content: counters(item, ".") ". "

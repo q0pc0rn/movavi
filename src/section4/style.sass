@@ -1,7 +1,10 @@
 .section4
+  .col-xs-12
+    padding: 0px
+
   @import .././assets/buttons/style.sass
   height: 1079px
-  padding: 70px 14px
+  padding: 70px 17px
   background: url("img/bg-color_4.png")
   width: 100%
   p:first-child
@@ -10,17 +13,27 @@
     font-weight: bold
 
   ul, p
+    padding-left: 0px
     text-align: left
     font-weight: 400
     font-size: 16px
-    li:nth-child(1)
-      list-style-image: url("img/icon_1_pictures.png")
-    li:nth-child(2)
-      list-style-image: url("img/icon_2_film.png")
-    li:nth-child(3)
-      list-style-image: url("img/icon_text.png")
-    li:nth-child(4)
-      list-style-image: url("img/icon_4_diamond-outlined-shape.png")
+
+  .row
+    .col-xs-9
+      font-size: 16px
+      vertical-align: middle
+    .kek
+      position: relative
+      padding-top: 5px
+    padding: 12px 0px
+    *
+      vertical-align: middle
+    .lol
+      img
+        position: relative
+        padding-left: 5px
+
+
 
   .col-xs-12:nth-child(2)
     display: flex
@@ -32,5 +45,4 @@
   a
     color: #3581d5
     font-size: 14px
-    font-style: italic
     text-align: center
