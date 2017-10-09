@@ -9,7 +9,7 @@
       text-align: center
       font-size: 16px
       padding: 0px
-      background-color: #f6f6f6
+      // background-color: #f6f6f6
       &:first-child
         border-radius: 0 6px 0 0
         margin-right: 4%
@@ -51,7 +51,38 @@
 @media screen and (min-width: 768px)
   .section3_2.container
     width: 768px
-@media screen and (min-width: 768px)
+    .nav.nav-tabs
+      width: 556px
+      height: 68px
+      border: 2px solid #1962b2
+      border-radius: 6px 6px 6px 6px
+    .nav.nav-tabs>li.active>a
+      color: white
+      font-weight: bold
+      background-color: #3581d5
+      &:focus, &:hover
+        background-color: #3581d5
+    ul
+      li.col-xs-6
+        border-radius: none
+        width: 48%
+        display: block
+        text-align: center
+        font-size: 16px
+        padding: 0px
+        background-color: none
+        &:first-child
+          border-radius: 0 6px 0 0
+          margin-right: 4%
+        a
+          padding: 10px 20px
+          vertical-align: middle
+          border: none
+          font-size: 16px
+          height: 65px
+          color: #1962b2
+          &:hover
+            background-color: none
   .up
     .tab-content
       padding: 0px
@@ -102,7 +133,3 @@
         width: 30px
       span
         padding-left: 13px
-  @media screen and (min-width: 1140px)
-    .section3_2.container
-      width: 1140px
-      margin: auto
