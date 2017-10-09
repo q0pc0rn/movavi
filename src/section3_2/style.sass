@@ -1,5 +1,6 @@
 .section3_2.container
   width: 100%
+  padding: 0px
   ul
     li.col-xs-6
       border-radius: 6px 0 0 0
@@ -19,11 +20,6 @@
         font-size: 16px
         height: 65px
         color: #7b7b7b
-  padding: 0px
-.tab-content
-  padding: 0px 17px 0px 17px
-  width: 100%
-  background-color: #eee
   .nav.nav-tabs
     width: 100%
     border: none
@@ -45,19 +41,6 @@
     &:focus, &:hover
       background-color: #eee
 
-  .swap_mode
-    font-size: 16px
-    display: flex
-    justify-content: center
-    align-items: center
-    a
-      padding-bottom: 20px
-      img
-        width: 30px
-      span
-        padding-left: 13px
-
-
     ol
       list-style: none
       counter-reset: item
@@ -65,18 +48,12 @@
       li:before
         content: counters(item, ".") ". "
         counter-increment: item 3
-
-    // ol
-    //   list-style: none
-    //   counter-reset: list
-    //   li
-    //     list-style-type: none
-    //   li:before
-    //     content: counters(list, ".") ". "
-    //     counter-increment: list 4
-  @media screen and (min-width: 768px)
+@media screen and (min-width: 768px)
+  .up
     .tab-content
       padding: 0px
+      .swap_mode
+        padding-top: 52px
     ol
       padding: 70px 44px
       .switch
@@ -91,16 +68,31 @@
           padding-top: 38px
           order: 1
           width: 50%
-    .swap_mode
-      padding-top: 52px
-      background-color: #eee
+      .swap_mode
+        padding-top: 52px
+
   // .nav.nav-tabs
   //   width: 768px
 @media screen and (min-width: 1140px)
   width: 1140px
-  .bg
+  .tab-content
     width: 100%
     background-color: #eee
-    .tab-content
-      width: 1140px
-      margin: auto
+    // width: 1140px
+    // margin: auto
+
+.tab-content
+  padding: 0px 0px 0px 0px
+  width: 100%
+  background-color: #eee
+  .swap_mode
+    font-size: 16px
+    display: flex
+    justify-content: center
+    align-items: center
+    a
+      padding-bottom: 20px
+      img
+        width: 30px
+      span
+        padding-left: 13px
