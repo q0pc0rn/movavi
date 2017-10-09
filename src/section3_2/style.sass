@@ -1,5 +1,5 @@
 .section3_2.container
-
+  width: 100%
   ul
     li.col-xs-6
       border-radius: 6px 0 0 0
@@ -20,10 +20,10 @@
         height: 65px
         color: #7b7b7b
   padding: 0px
-  .tab-content
-    padding: 0px 17px 0px 17px
-    // width: 100%
-    background-color: #eee
+.tab-content
+  padding: 0px 17px 0px 17px
+  width: 100%
+  background-color: #eee
   .nav.nav-tabs
     width: 100%
     border: none
@@ -64,7 +64,7 @@
     ol
       li:before
         content: counters(item, ".") ". "
-        counter-increment: item
+        counter-increment: item 3
 
     // ol
     //   list-style: none

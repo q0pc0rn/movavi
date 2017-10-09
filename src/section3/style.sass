@@ -38,7 +38,9 @@
       li
         list-style: disc
   @media screen and (min-width: 768px)
-    width: 768px
+    .tab-pane.active
+      width: 768px
+      margin: auto
     .up
       ol
         padding: 0px 44px 0px 44px
@@ -54,10 +56,15 @@
             order: 1
             width: 50%
   @media screen and (min-width: 1140px)
-    .section3.container
+    width: 100%
+    .tab-content
+      background-color: #eee
       width: 100%
+    .tab-pane.active
+      width: 1140px
       margin: auto
-      ol .switch .text_p
-        padding-right: 33px
-      .up
-        width: 1140px
+    ol .switch .text_p
+      padding-right: 33px
+    .up
+      width: 1140px
+      margin: auto
