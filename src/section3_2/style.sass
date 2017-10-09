@@ -1,5 +1,5 @@
 .section3_2.container
-  width: 100%
+  width: 320px
   padding: 0px
   ul
     li.col-xs-6
@@ -49,6 +49,9 @@
         content: counters(item, ".") ". "
         counter-increment: item 3
 @media screen and (min-width: 768px)
+  .section3_2.container
+    width: 768px
+@media screen and (min-width: 768px)
   .up
     .tab-content
       padding: 0px
@@ -74,7 +77,10 @@
   // .nav.nav-tabs
   //   width: 768px
 @media screen and (min-width: 1140px)
-  width: 1140px
+  .section3_2.container
+    width: 1140px
+    margin: auto
+
   .tab-content
     width: 100%
     background-color: #eee
@@ -96,3 +102,7 @@
         width: 30px
       span
         padding-left: 13px
+  @media screen and (min-width: 1140px)
+    .section3_2.container
+      width: 1140px
+      margin: auto
