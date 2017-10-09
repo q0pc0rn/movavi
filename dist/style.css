@@ -29,7 +29,7 @@
   margin-top: 32px; }
   @media screen and (min-width: 768px) {
     .button-window {
-      margin-right: 16px; } }
+      margin-right: 15px; } }
   @media screen and (min-width: 1140px) {
     .button-window {
       width: 252px; } }
@@ -39,16 +39,16 @@
   background: #1962b2; }
   @media screen and (min-width: 768px) {
     .button-iphone {
-      margin-left: 16px; } }
+      margin-left: 15px; } }
 
 .section1.container {
   background: url("img/banner_header.png") no-repeat center center;
   width: 100%; }
   .section1.container .header {
+    padding: 0px;
     width: 100%;
     margin: auto;
-    font-size: 25px;
-    padding: 65px 17px; }
+    font-size: 25px; }
     @media screen and (min-width: 320px) {
       .section1.container .header {
         font-size: 28px; }
@@ -56,7 +56,7 @@
           font-size: 18px; } }
     @media screen and (min-width: 768px) {
       .section1.container .header {
-        padding-left: 24px; } }
+        padding-left: 0px; } }
     .section1.container .header div:nth-child(2) p {
       font-weight: bold; }
     .section1.container .header div ul {
@@ -313,7 +313,7 @@
     margin-top: 32px; }
     @media screen and (min-width: 768px) {
       .section4.container .button-window {
-        margin-right: 16px; } }
+        margin-right: 15px; } }
     @media screen and (min-width: 1140px) {
       .section4.container .button-window {
         width: 252px; } }
@@ -322,7 +322,7 @@
     background: #1962b2; }
     @media screen and (min-width: 768px) {
       .section4.container .button-iphone {
-        margin-left: 16px; } }
+        margin-left: 15px; } }
   .section4.container p:first-child {
     font-size: 28px;
     font-weight: bold; }
