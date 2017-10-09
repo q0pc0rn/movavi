@@ -1,4 +1,4 @@
-.button, .button-window, .button-iphone, .section4.container .button-window, .section4.container .button-iphone {
+.button, .button-window, .button-iphone, .section4.container .bkac .button-window, .section4.container .bkac .button-iphone {
   margin-bottom: 15px;
   color: white;
   font-size: 20px;
@@ -7,21 +7,21 @@
   border-radius: 6px;
   text-align: center;
   vertical-align: middle; }
-  .button ::before, .button-window ::before, .button-iphone ::before, .section4.container .button-window ::before, .section4.container .button-iphone ::before {
+  .button ::before, .button-window ::before, .button-iphone ::before, .section4.container .bkac .button-window ::before, .section4.container .bkac .button-iphone ::before {
     content: '';
     display: inline-block;
     height: 100%;
     vertical-align: middle; }
-  .button img, .button-window img, .button-iphone img, .section4.container .button-window img, .section4.container .button-iphone img {
+  .button img, .button-window img, .button-iphone img, .section4.container .bkac .button-window img, .section4.container .bkac .button-iphone img {
     width: 24px;
     position: relative;
     top: -4px; }
   @media screen and (min-width: 768px) {
-    .button, .button-window, .button-iphone, .section4.container .button-window, .section4.container .button-iphone {
+    .button, .button-window, .button-iphone, .section4.container .bkac .button-window, .section4.container .bkac .button-iphone {
       margin-top: 32px;
       width: 344px; } }
   @media screen and (min-width: 1140px) {
-    .button, .button-window, .button-iphone, .section4.container .button-window, .section4.container .button-iphone {
+    .button, .button-window, .button-iphone, .section4.container .bkac .button-window, .section4.container .bkac .button-iphone {
       width: 252px; } }
 
 .button-window {
@@ -265,7 +265,7 @@
       counter-increment: list 4; }
   @media screen and (min-width: 768px) {
     .section3_3.container ol {
-      padding: 70px 44px; }
+      padding: 0px 0px 20px 44px; }
       .section3_3.container ol .switch {
         display: flex;
         justify-content: center; }
@@ -285,86 +285,88 @@
       padding-right: 33px; } }
 
 .section4.container {
-  padding: 70px 17px;
-  background: url("img/bg-color_4.png");
-  width: 100%; }
-  .section4.container .col-xs-12 {
-    padding: 20px 0px 0px 0px; }
-  .section4.container .button, .section4.container .button-window, .section4.container .button-iphone {
-    margin-bottom: 15px;
-    color: white;
-    font-size: 20px;
-    height: 72px;
-    line-height: 1.2;
-    border-radius: 6px;
-    text-align: center;
-    vertical-align: middle; }
-    .section4.container .button ::before, .section4.container .button-window ::before, .section4.container .button-iphone ::before {
-      content: '';
-      display: inline-block;
-      height: 100%;
+  background: url("img/background_green_hd.png") no-repeat center center;
+  width: 100%;
+  padding: 0px; }
+  .section4.container .bkac {
+    padding: 70px 17px; }
+    .section4.container .bkac .col-xs-12 {
+      padding: 20px 0px 0px 0px; }
+    .section4.container .bkac .button, .section4.container .bkac .button-window, .section4.container .bkac .button-iphone {
+      margin-bottom: 15px;
+      color: white;
+      font-size: 20px;
+      height: 72px;
+      line-height: 1.2;
+      border-radius: 6px;
+      text-align: center;
       vertical-align: middle; }
-    .section4.container .button img, .section4.container .button-window img, .section4.container .button-iphone img {
-      width: 24px;
-      position: relative;
-      top: -4px; }
-    @media screen and (min-width: 768px) {
-      .section4.container .button, .section4.container .button-window, .section4.container .button-iphone {
-        margin-top: 32px;
-        width: 344px; } }
-    @media screen and (min-width: 1140px) {
-      .section4.container .button, .section4.container .button-window, .section4.container .button-iphone {
-        width: 252px; } }
-  .section4.container .button-window {
-    background: #3581d5;
-    margin-top: 32px; }
-    @media screen and (min-width: 768px) {
-      .section4.container .button-window {
-        margin-right: 15px; } }
-    @media screen and (min-width: 1140px) {
-      .section4.container .button-window {
-        width: 252px; } }
-  .section4.container .button-iphone {
-    margin-top: 32px;
-    background: #1962b2; }
-    @media screen and (min-width: 768px) {
-      .section4.container .button-iphone {
-        margin-left: 15px; } }
-  .section4.container p:first-child {
-    font-size: 28px;
-    font-weight: bold; }
-  .section4.container ul, .section4.container p {
-    padding-left: 0px;
-    font-weight: 400;
-    font-size: 16px; }
-  .section4.container .row {
-    margin: 0px;
-    padding: 12px 0px; }
-    .section4.container .row .col-xs-2 {
-      padding: 0px; }
-    .section4.container .row p {
-      font-size: 16px;
-      text-align: left;
-      font-weight: 400; }
-    .section4.container .row .col-xs-9 {
-      font-size: 16px;
-      vertical-align: middle; }
-    .section4.container .row .kek {
-      position: relative;
-      padding-top: 5px; }
-    .section4.container .row * {
-      vertical-align: middle; }
-    .section4.container .row .lol img {
-      position: relative;
-      padding-left: 5px; }
-  .section4.container .box_logo img {
-    margin-top: 45px;
-    width: 161px;
-    height: 214px; }
-  .section4.container a {
-    color: #3581d5;
-    font-size: 14px;
-    text-align: center; }
+      .section4.container .bkac .button ::before, .section4.container .bkac .button-window ::before, .section4.container .bkac .button-iphone ::before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle; }
+      .section4.container .bkac .button img, .section4.container .bkac .button-window img, .section4.container .bkac .button-iphone img {
+        width: 24px;
+        position: relative;
+        top: -4px; }
+      @media screen and (min-width: 768px) {
+        .section4.container .bkac .button, .section4.container .bkac .button-window, .section4.container .bkac .button-iphone {
+          margin-top: 32px;
+          width: 344px; } }
+      @media screen and (min-width: 1140px) {
+        .section4.container .bkac .button, .section4.container .bkac .button-window, .section4.container .bkac .button-iphone {
+          width: 252px; } }
+    .section4.container .bkac .button-window {
+      background: #3581d5;
+      margin-top: 32px; }
+      @media screen and (min-width: 768px) {
+        .section4.container .bkac .button-window {
+          margin-right: 15px; } }
+      @media screen and (min-width: 1140px) {
+        .section4.container .bkac .button-window {
+          width: 252px; } }
+    .section4.container .bkac .button-iphone {
+      margin-top: 32px;
+      background: #1962b2; }
+      @media screen and (min-width: 768px) {
+        .section4.container .bkac .button-iphone {
+          margin-left: 15px; } }
+    .section4.container .bkac p:first-child {
+      font-size: 28px;
+      font-weight: bold; }
+    .section4.container .bkac ul, .section4.container .bkac p {
+      padding-left: 0px;
+      font-weight: 400;
+      font-size: 16px; }
+    .section4.container .bkac .row {
+      margin: 0px;
+      padding: 12px 0px; }
+      .section4.container .bkac .row .col-xs-2 {
+        padding: 0px; }
+      .section4.container .bkac .row p {
+        font-size: 16px;
+        text-align: left;
+        font-weight: 400; }
+      .section4.container .bkac .row .col-xs-9 {
+        font-size: 16px;
+        vertical-align: middle; }
+      .section4.container .bkac .row .kek {
+        position: relative;
+        padding-top: 5px; }
+      .section4.container .bkac .row * {
+        vertical-align: middle; }
+      .section4.container .bkac .row .lol img {
+        position: relative;
+        padding-left: 5px; }
+    .section4.container .bkac .box_logo img {
+      margin-top: 45px;
+      width: 161px;
+      height: 214px; }
+    .section4.container .bkac a {
+      color: #3581d5;
+      font-size: 14px;
+      text-align: center; }
   @media screen and (min-width: 320px) {
     .section4.container .col-xs-12 {
       padding: 0px; }
@@ -396,44 +398,48 @@
       width: 207px;
       height: 277px; } }
   @media screen and (min-width: 1140px) {
-    .section4.container {
-      width: 1140px; }
-      .section4.container .box_logo img {
-        width: 293px;
-        height: 392px; } }
+    .section4.container .bkac {
+      width: 1140px;
+      margin: auto; }
+    .section4.container .box_logo img {
+      width: 293px;
+      height: 392px; } }
 
 .section5.container {
   background-color: #eee;
-  width: 100%;
-  padding: 70px 24px 0px 24px; }
-  .section5.container p {
-    font-size: 28px;
-    padding: 0px 10px 0px 10px;
-    text-align: center;
-    font-weight: bold; }
-  .section5.container .col-xs-12 {
-    margin-bottom: 32px;
-    display: flex;
-    align-items: center;
-    height: 72px;
-    border: 2px dashed #bdbdbd;
-    border-radius: 6px; }
-    .section5.container .col-xs-12 p {
-      font-size: 16px;
-      text-align: left;
-      font-weight: 400; }
-  .section5.container .blue {
-    border: 2px solid #b4d1f2;
-    background-color: #b4d1f2; }
-    .section5.container .blue p {
-      font-size: 16px;
-      text-align: left; }
+  width: 100%; }
+  .section5.container .back {
+    padding: 70px 24px 0px 24px; }
+    .section5.container .back p {
+      font-size: 28px;
+      padding: 0px 10px 0px 10px;
+      text-align: center;
+      font-weight: bold; }
+    .section5.container .back .col-xs-12 {
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      height: 72px;
+      border: 2px dashed #bdbdbd;
+      border-radius: 6px; }
+      .section5.container .back .col-xs-12 p {
+        font-size: 16px;
+        text-align: left;
+        font-weight: 400; }
+    .section5.container .back .blue {
+      border: 2px solid #b4d1f2;
+      background-color: #b4d1f2; }
+      .section5.container .back .blue p {
+        font-size: 16px;
+        text-align: left; }
   @media screen and (min-width: 320px) {
     .section5.container {
       padding: 70px 0px; } }
   @media screen and (min-width: 1140px) {
-    .section5.container {
-      width: 1140px; } }
+    .section5.container .back {
+      padding: 0px;
+      width: 943px;
+      margin: auto; } }
 
 .section6.container {
   width: 100%;
@@ -472,7 +478,7 @@
   @media screen and (min-width: 1140px) {
     .section6.container {
       width: 1140px;
-      padding: 0px 98px 0px 98px; }
+      padding: 90px 98px 0px 98px; }
       .section6.container .col-xs-12.col-sm-6 {
         width: 456px;
         height: 172px; }
