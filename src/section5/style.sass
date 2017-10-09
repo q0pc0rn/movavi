@@ -1,8 +1,9 @@
 .section5.container
   background-color: #eee
   width: 100%
+  padding: 0px
   .back
-    padding: 70px 24px 0px 24px
+    padding: 70px 0px 0px 0px
     p
       font-size: 28px
       padding: 0px 10px 0px 10px
@@ -27,9 +28,22 @@
         font-size: 16px
         text-align: left
   @media screen and (min-width: 320px)
-    padding: 70px 0px
+    .back
+      padding: 70px 17px 0px 17px
+  @media screen and (min-width: 768px)
+    .back
+      padding: 70px 24px 0px 24px
+      .col-sm-6
+        width: 344px
+        padding: 0px
+      .col-sm-6:nth-child(2)
+        margin-right: 16px
+      .col-sm-6:nth-child(3)
+        margin-left: 16px
   @media screen and (min-width: 1140px)
     .back
       padding: 0px
       width: 943px
       margin: auto
+      .col-sm-6
+        padding: 0px
