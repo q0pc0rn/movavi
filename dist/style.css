@@ -20,6 +20,9 @@
     .button, .button-window, .button-iphone, .section4.container .button-window, .section4.container .button-iphone {
       margin-top: 32px;
       width: 344px; } }
+  @media screen and (min-width: 1140px) {
+    .button, .button-window, .button-iphone, .section4.container .button-window, .section4.container .button-iphone {
+      width: 252px; } }
 
 .button-window {
   background: #3581d5;
@@ -27,6 +30,9 @@
   @media screen and (min-width: 768px) {
     .button-window {
       margin-right: 16px; } }
+  @media screen and (min-width: 1140px) {
+    .button-window {
+      width: 252px; } }
 
 .button-iphone {
   margin-top: 32px;
@@ -36,83 +42,99 @@
       margin-left: 16px; } }
 
 .section1.container {
-  margin: 0px;
   width: 100%;
-  background: url("img/banner_header.png") no-repeat center center;
-  font-size: 25px;
-  padding: 65px 17px; }
-  @media screen and (min-width: 768px) {
-    .section1.container {
-      padding-left: 24px; } }
-  .section1.container div:nth-child(2) p {
-    font-weight: bold; }
-  .section1.container div ul {
-    font-size: 15px;
-    padding-left: 17px; }
-  .section1.container div:nth-child(4) {
-    font-size: 20px; }
-  @media screen and (min-width: 320px) {
-    .section1.container {
-      font-size: 28px; }
-      .section1.container div ul {
-        font-size: 18px; } }
+  background: url("img/banner_header.png") no-repeat center center; }
+  .section1.container .header {
+    width: 1140px;
+    margin: auto;
+    font-size: 25px;
+    padding: 65px 17px; }
+    @media screen and (min-width: 320px) {
+      .section1.container .header {
+        font-size: 28px; }
+        .section1.container .header div ul {
+          font-size: 18px; } }
+    @media screen and (min-width: 768px) {
+      .section1.container .header {
+        padding-left: 24px; } }
+    .section1.container .header div:nth-child(2) p {
+      font-weight: bold; }
+    .section1.container .header div ul {
+      font-size: 15px;
+      padding-left: 17px; }
+    .section1.container .header div:nth-child(4) {
+      font-size: 20px; }
+    @media screen and (min-width: 1140px) {
+      .section1.container .header {
+        width: 1140px; } }
 
-.section2 {
+.section2.container {
+  width: 100%;
   font-size: 28px;
-  padding: 70px 17px; }
-  .section2 div:first-child p {
+  padding: 90px 17px 35px 17px; }
+  .section2.container div:first-child p {
     text-align: center;
     font-weight: bold; }
-  .section2 div:nth-child(2) p {
+  .section2.container div:nth-child(2) p {
     font-size: 16px; }
+  @media screen and (min-width: 1140px) {
+    .section2.container {
+      width: 1140px; } }
 
 .section3.container {
-  padding: 0px;
+  padding: 15px 0px 45px 0px;
   width: 100%; }
-  .section3.container ol {
-    padding: 0px 17px 0px 17px;
-    list-style-position: inside;
-    padding-bottom: 23px; }
-    .section3.container ol li {
-      font-size: 24px;
-      font-weight: bold; }
-      .section3.container ol li p {
-        padding: 23px 0px 40px 0px;
-        margin-left: 0px;
-        font-size: 16px;
-        font-weight: 400; }
-      .section3.container ol li img {
-        padding-top: 32px;
-        width: 100%; }
-  .section3.container ol li img, .section3.container p {
-    width: 100%;
-    font-size: 16px;
-    font-weight: 400; }
-  .section3.container ol:first-child {
-    list-style: none;
-    counter-reset: item; }
-    .section3.container ol:first-child li {
-      display: block;
-      list-style-type: none; }
-    .section3.container ol:first-child li:before {
-      content: counters(item, ".") ". ";
-      counter-increment: item; }
-  .section3.container ol:last-child li {
-    list-style: disc; }
-  @media screen and (min-width: 768px) {
-    .section3.container ol {
-      padding: 70px 44px; }
-      .section3.container ol .switch {
-        display: flex;
-        justify-content: center; }
-        .section3.container ol .switch .images {
-          height: 50%;
-          width: 50%;
-          order: 2; }
-        .section3.container ol .switch .text_p {
-          padding-right: 20px;
-          order: 1;
-          width: 50%; } }
+  .section3.container .up {
+    padding: 0px;
+    width: 100%; }
+    .section3.container .up ol {
+      padding: 0px 17px 0px 17px;
+      list-style-position: inside;
+      padding-bottom: 23px; }
+      .section3.container .up ol li {
+        font-size: 24px;
+        font-weight: bold; }
+        .section3.container .up ol li p {
+          padding: 23px 0px 40px 0px;
+          margin-left: 0px;
+          font-size: 16px;
+          font-weight: 400; }
+        .section3.container .up ol li img {
+          padding-top: 32px;
+          width: 100%; }
+    .section3.container .up ol li img, .section3.container .up p {
+      width: 100%;
+      font-size: 16px;
+      font-weight: 400; }
+    .section3.container .up ol:first-child {
+      list-style: none;
+      counter-reset: item; }
+      .section3.container .up ol:first-child li {
+        display: block;
+        list-style-type: none; }
+      .section3.container .up ol:first-child li:before {
+        content: counters(item, ".") ". ";
+        counter-increment: item; }
+    .section3.container .up ol:last-child li {
+      list-style: disc; }
+    @media screen and (min-width: 768px) {
+      .section3.container .up ol {
+        padding: 0px 44px; }
+        .section3.container .up ol .switch {
+          display: flex;
+          justify-content: center; }
+          .section3.container .up ol .switch .images {
+            height: 50%;
+            width: 50%;
+            order: 2; }
+          .section3.container .up ol .switch .text_p {
+            padding-right: 20px;
+            order: 1;
+            width: 50%; } }
+    @media screen and (min-width: 1140px) {
+      .section3.container .up {
+        width: 1140px;
+        margin: auto; } }
 
 .section3_2.container {
   padding: 0px; }
@@ -136,10 +158,11 @@
       color: #7b7b7b; }
   .section3_2.container .tab-content {
     padding: 0px 17px 0px 17px;
-    width: 100%;
     background-color: #eee; }
-  .section3_2.container .nav-tabs {
-    border: none; }
+  .section3_2.container .nav.nav-tabs {
+    width: 1140px;
+    border: none;
+    margin: auto; }
   .section3_2.container ol {
     padding: 0px;
     list-style-position: inside; }
@@ -191,6 +214,17 @@
           width: 50%; }
     .section3_2.container .swap_mode {
       padding-top: 52px; } }
+  .section3_2.container .bg {
+    background-color: #eee; }
+
+@media screen and (min-width: 1140px) {
+  width: 1140px;
+  .bg {
+    width: 100%;
+    background-color: #eee; }
+    .bg .tab-content {
+      width: 1140px;
+      margin: auto; } }
 
 .section3_3.container {
   padding: 0px;
@@ -238,6 +272,9 @@
           padding-right: 20px;
           order: 1;
           width: 50%; } }
+  @media screen and (min-width: 1140px) {
+    .section3_3.container {
+      width: 1140px; } }
 
 .section4.container {
   padding: 70px 17px;
@@ -267,12 +304,18 @@
       .section4.container .button, .section4.container .button-window, .section4.container .button-iphone {
         margin-top: 32px;
         width: 344px; } }
+    @media screen and (min-width: 1140px) {
+      .section4.container .button, .section4.container .button-window, .section4.container .button-iphone {
+        width: 252px; } }
   .section4.container .button-window {
     background: #3581d5;
     margin-top: 32px; }
     @media screen and (min-width: 768px) {
       .section4.container .button-window {
         margin-right: 16px; } }
+    @media screen and (min-width: 1140px) {
+      .section4.container .button-window {
+        width: 252px; } }
   .section4.container .button-iphone {
     margin-top: 32px;
     background: #1962b2; }
@@ -339,6 +382,9 @@
       padding-top: 15px; }
     .section4.container .goods_name.col-sm-8 p {
       text-align: left; } }
+  @media screen and (min-width: 1140px) {
+    .section4.container {
+      width: 1140px; } }
 
 .section5.container {
   background-color: #eee;
@@ -369,6 +415,9 @@
   @media screen and (min-width: 320px) {
     .section5.container {
       padding: 70px 0px; } }
+  @media screen and (min-width: 1140px) {
+    .section5.container {
+      width: 1140px; } }
 
 .section6.container {
   width: 100%;
@@ -404,6 +453,9 @@
       margin-right: 16px; }
     .section6.container .left {
       margin-left: 16px; } }
+  @media screen and (min-width: 1140px) {
+    .section6.container {
+      width: 1140px; } }
 
 body {
   font-family: OpenSans; }

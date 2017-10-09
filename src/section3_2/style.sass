@@ -21,10 +21,12 @@
   padding: 0px
   .tab-content
     padding: 0px 17px 0px 17px
-    width: 100%
+    // width: 100%
     background-color: #eee
-  .nav-tabs
+  .nav.nav-tabs
+    width: 1140px
     border: none
+    margin: auto
   ol
     padding: 0px
     list-style-position: inside
@@ -80,3 +82,13 @@
           width: 50%
     .swap_mode
       padding-top: 52px
+  .bg
+    background-color: #eee
+@media screen and (min-width: 1140px)
+  width: 1140px
+  .bg
+    width: 100%
+    background-color: #eee
+    .tab-content
+      width: 1140px
+      margin: auto
