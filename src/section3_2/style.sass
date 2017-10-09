@@ -57,12 +57,13 @@
         padding-left: 13px
 
 
-  ol:nth-child(2)
-    counter-reset: item
-  ol
-    li:before
-      content: counters(item, ".") ". "
-      counter-increment: item
+    ol
+      list-style: none
+      counter-reset: item
+    ol
+      li:before
+        content: counters(item, ".") ". "
+        counter-increment: item
 
     // ol
     //   list-style: none
@@ -93,6 +94,8 @@
       padding-top: 52px
   .bg
     background-color: #eee
+  ul
+    li
 @media screen and (min-width: 1140px)
   width: 1140px
   .bg

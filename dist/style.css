@@ -197,11 +197,12 @@
         width: 30px; }
       .section3_2.container .swap_mode a span {
         padding-left: 13px; }
-  .section3_2.container ol:nth-child(2) {
-    counter-reset: item; }
-  .section3_2.container ol li:before {
-    content: counters(item, ".") ". ";
-    counter-increment: item; }
+    .section3_2.container .swap_mode ol {
+      list-style: none;
+      counter-reset: item; }
+    .section3_2.container .swap_mode ol li:before {
+      content: counters(item, ".") ". ";
+      counter-increment: item; }
   @media screen and (min-width: 768px) {
     .section3_2.container .tab-content {
       padding: 0px; }
