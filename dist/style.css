@@ -88,7 +88,7 @@
 
 .section3.container {
   padding: 15px 0px 45px 0px;
-  width: auto; }
+  width: 320px; }
   .section3.container .up {
     padding: 0px;
     width: 100%; }
@@ -123,19 +123,21 @@
     .section3.container .up ol:last-child li {
       list-style: disc; }
   @media screen and (min-width: 768px) {
-    .section3.container .up ol {
-      padding: 0px 44px 0px 44px; }
-      .section3.container .up ol .switch {
-        display: flex;
-        justify-content: center; }
-        .section3.container .up ol .switch .images {
-          height: 50%;
-          width: 50%;
-          order: 2; }
-        .section3.container .up ol .switch .text_p {
-          padding-right: 20px;
-          order: 1;
-          width: 50%; } }
+    .section3.container {
+      width: 768px; }
+      .section3.container .up ol {
+        padding: 0px 44px 0px 44px; }
+        .section3.container .up ol .switch {
+          display: flex;
+          justify-content: center; }
+          .section3.container .up ol .switch .images {
+            height: 50%;
+            width: 50%;
+            order: 2; }
+          .section3.container .up ol .switch .text_p {
+            padding-right: 20px;
+            order: 1;
+            width: 50%; } }
   @media screen and (min-width: 1140px) {
     .section3.container .section3.container {
       width: 100%;
@@ -146,7 +148,6 @@
         width: 1140px; } }
 
 .section3_2.container {
-  width: 100%;
   padding: 0px; }
   .section3_2.container ul li.col-xs-6 {
     border-radius: 6px 0 0 0;
@@ -224,12 +225,8 @@
           order: 1;
           width: 50%; }
     .section3_2.container .swap_mode {
-      padding-top: 52px; } }
-  .section3_2.container .bg {
-    width: 768px;
-    background-color: #eee; }
-  .section3_2.container .nav.nav-tabs {
-    width: 768px; }
+      padding-top: 52px;
+      background-color: #eee; } }
 
 @media screen and (min-width: 1140px) {
   width: 1140px;
