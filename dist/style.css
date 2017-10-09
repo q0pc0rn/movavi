@@ -122,24 +122,26 @@
         counter-increment: item; }
     .section3.container .up ol:last-child li {
       list-style: disc; }
-    @media screen and (min-width: 768px) {
-      .section3.container .up ol {
-        padding: 0px 44px; }
-        .section3.container .up ol .switch {
-          display: flex;
-          justify-content: center; }
-          .section3.container .up ol .switch .images {
-            height: 50%;
-            width: 50%;
-            order: 2; }
-          .section3.container .up ol .switch .text_p {
-            padding-right: 20px;
-            order: 1;
-            width: 50%; } }
-    @media screen and (min-width: 1140px) {
-      .section3.container .up {
-        width: 1140px;
-        margin: auto; } }
+  @media screen and (min-width: 768px) {
+    .section3.container ol {
+      padding: 0px 44px; }
+      .section3.container ol .switch {
+        display: flex;
+        justify-content: center; }
+        .section3.container ol .switch .images {
+          height: 50%;
+          width: 50%;
+          order: 2; }
+        .section3.container ol .switch .text_p {
+          padding-right: 20px;
+          order: 1;
+          width: 50%; } }
+  @media screen and (min-width: 1140px) {
+    .section3.container {
+      width: 1140px;
+      margin: auto; }
+      .section3.container ol .switch .text_p {
+        padding-right: 33px; } }
 
 .section3_2.container {
   padding: 0px; }
@@ -279,7 +281,8 @@
           width: 50%; } }
   @media screen and (min-width: 1140px) {
     .section3_3.container {
-      width: 1140px; } }
+      width: 1140px;
+      padding-right: 33px; } }
 
 .section4.container {
   padding: 70px 17px;
@@ -468,7 +471,15 @@
       margin-left: 16px; } }
   @media screen and (min-width: 1140px) {
     .section6.container {
-      width: 1140px; } }
+      width: 1140px;
+      padding: 0px 98px 0px 98px; }
+      .section6.container .col-xs-12.col-sm-6 {
+        width: 456px;
+        height: 172px; }
+        .section6.container .col-xs-12.col-sm-6 .right {
+          margin-right: 16px; }
+        .section6.container .col-xs-12.col-sm-6 .left {
+          margin-right: 16px; } }
 
 body {
   font-family: OpenSans; }

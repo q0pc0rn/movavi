@@ -37,20 +37,22 @@
     ol:last-child
       li
         list-style: disc
-    @media screen and (min-width: 768px)
-      ol
-        padding: 0px 44px
-        .switch
-          display: flex
-          justify-content: center
-          .images
-            height: 50%
-            width: 50%
-            order: 2
-          .text_p
-            padding-right: 20px
-            order: 1
-            width: 50%
-    @media screen and (min-width: 1140px)
-      width: 1140px
-      margin: auto
+  @media screen and (min-width: 768px)
+    ol
+      padding: 0px 44px
+      .switch
+        display: flex
+        justify-content: center
+        .images
+          height: 50%
+          width: 50%
+          order: 2
+        .text_p
+          padding-right: 20px
+          order: 1
+          width: 50%
+  @media screen and (min-width: 1140px)
+    width: 1140px
+    margin: auto
+    ol .switch .text_p
+      padding-right: 33px
