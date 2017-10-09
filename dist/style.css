@@ -42,10 +42,10 @@
       margin-left: 16px; } }
 
 .section1.container {
-  width: 100%;
-  background: url("img/banner_header.png") no-repeat center center; }
+  background: url("img/banner_header.png") no-repeat center center;
+  width: 100%; }
   .section1.container .header {
-    width: 1140px;
+    width: 100%;
     margin: auto;
     font-size: 25px;
     padding: 65px 17px; }
@@ -64,9 +64,10 @@
       padding-left: 17px; }
     .section1.container .header div:nth-child(4) {
       font-size: 20px; }
-    @media screen and (min-width: 1140px) {
-      .section1.container .header {
-        width: 1140px; } }
+  @media screen and (min-width: 1140px) {
+    .section1.container .header {
+      width: 1140px;
+      margin: auto; } }
 
 .section2.container {
   width: 100%;
@@ -160,7 +161,7 @@
     padding: 0px 17px 0px 17px;
     background-color: #eee; }
   .section3_2.container .nav.nav-tabs {
-    width: 1140px;
+    width: 100%;
     border: none;
     margin: auto; }
   .section3_2.container ol {
@@ -190,11 +191,11 @@
         width: 30px; }
       .section3_2.container .swap_mode a span {
         padding-left: 13px; }
-  .section3_2.container .tab ol:nth-child(2) {
+  .section3_2.container ol:nth-child(2) {
     counter-reset: item; }
   .section3_2.container ol li:before {
-    counter-increment: item;
-    content: counters(item, ".") ". "; }
+    content: counters(item, ".") ". ";
+    counter-increment: item; }
   @media screen and (min-width: 768px) {
     .section3_2.container .tab-content {
       padding: 0px; }

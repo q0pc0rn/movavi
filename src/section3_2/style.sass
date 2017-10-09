@@ -24,7 +24,7 @@
     // width: 100%
     background-color: #eee
   .nav.nav-tabs
-    width: 1140px
+    width: 100%
     border: none
     margin: auto
   ol
@@ -56,13 +56,22 @@
       span
         padding-left: 13px
 
-  .tab
-    ol:nth-child(2)
-      counter-reset: item
+
+  ol:nth-child(2)
+    counter-reset: item
   ol
     li:before
-      counter-increment: item
       content: counters(item, ".") ". "
+      counter-increment: item
+
+    // ol
+    //   list-style: none
+    //   counter-reset: list
+    //   li
+    //     list-style-type: none
+    //   li:before
+    //     content: counters(list, ".") ". "
+    //     counter-increment: list 4
   @media screen and (min-width: 768px)
     .tab-content
       padding: 0px
